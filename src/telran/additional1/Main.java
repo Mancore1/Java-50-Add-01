@@ -14,6 +14,8 @@ public static int maxSubsequenceLength(int[] arr) {
 		if (arr[i] == arr[i - 1]) {
 			counter++;
 			max = Math.max(max, counter);
+			// if (current > max) {     without Math.max
+			// max = current;  		
 		} else {
 			counter = 1;
 		}
